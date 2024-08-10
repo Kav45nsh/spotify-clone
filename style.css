@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    background-color: #000;
+}
+
+.sidebar{
+    width: 370px;
+    background-color:#000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+
+}
+.sidebar-nav{
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+
+.sidebar-nav .logo{
+    width: 120px;
+    margin-left: 8px;
+}
+.sidebar-nav .logo img{
+    width: 100%;
+}
+
+.sidebar-nav ul{
+    list-style: none;
+}
+
+.sidebar-nav ul li{
+    padding: 10px 20px;
+}
+.sidebar-nav ul li a{
+    color: rgb(246, 244, 244);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 550;
+
+}
+
+.sidebar-nav ul li a i{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.sidebar-nav ul li a:hover{
+    color: aliceblue;
+}
+
+.create-playlist{
+    background-color: #343333;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 30px 15px;
+}
+
+.sidebar-scroll{
+    height: 120px;
+    overflow-y: auto;
+
+}
+
+.sidebar-scroll::-webkit-scrollbar{
+    background: transparent;
+}
+
+.sidebar-scroll:hover::-webkit-scrollbar-thumb{
+    background: #ccc;
+}
+
+.create-playlist h4{
+    color: #ccc;
+}
+
+.create-playlist p{
+    color: white    ;
+}
+
+.create-playlist button{
+    width: 110px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.sidebar-policy{
+    background-color: #0f0f0f;
+    font-size: 10px;
+    padding: 20px 10px;
+}
+.sidebar-policy ul li a{
+    color: #adacac;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 11px;
+
+}
+.sidebar-policy ul li{
+    padding: 0 10px;
+    padding-bottom: 8px;
+
+}
+
+.sidebar-policy button{
+    background-color: transparent;
+    color: white;
+    border: 0.25px solid white;
+    margin-top: 25px;
+    width: 80px;
+    height: 30px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+.sidebar-policy ul{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.sidebar-policy ul li a:hover{
+    text-decoration: underline;
+}
+
+.sidebar-policy button:hover{
+    border: 2px solid white;
+}
+
+.main-section{
+    margin-left: 370px;
+    background-color: #0f0f0f;
+    height: 100vh;
+    overflow: auto;
+}
+.top-nav{
+    padding: 25px 30px;
+    background-color: #0f0f0f;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-top-left-radius: 20px;
+
+}
+
+.main-section .top-nav button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+
+}
+
+.prev-button button i{
+    color: white;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.sign-up{
+    color: #adacac;
+    font-size: 16px;
+    margin-right: 10px;
+    font-weight: 600;
+}
+.sign-up:hover{
+    color: #ffffff;
+}
+.top-nav .login-btn .log-in{
+    color: #adacac;
+    font-size: 16px;
+    font-weight: 600;
+    background: #ffffff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: black;
+
+}
+
+.top-nav .login-btn .log-in:hover{
+    background: #adacac;
+}
+
+.spotify-playlist{
+    padding: 20px 40px;
+}
+
+.spotify-playlist h2{
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+
+}
+
+.card{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+ .item{
+    width: 200px;
+    min-width: 140px;
+    background-color: #0f0f0f;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+.item img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+ 
+.item:hover{
+    background-color: #413f3f;
+}
+.item h4{
+    color: white;
+
+}
+.item p{
+    color: rgb(187, 184, 184);
+}
+
+.item p:hover{
+    text-decoration: underline;
+}
+.play-btn{
+    position: relative;
+}
+.spotify-playlist .play-btn i{
+    position: absolute;
+    background: #1db954;
+    border-radius: 50%;
+    padding: 15px;
+    right: 8px;
+    top: -55px;
+    opacity: 0;
+    transform: 0.3s ease all;
+}
+
+.spotify-playlist .play-btn i:hover{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+
+.artist .item img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+
+.footer-section{
+    padding: 20px 40px;
+}
+
+.footer-section .footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer-section .footer .footer-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.footer-links div{
+    font-size: 20px;
+    color: white;
+}
+
+.footer-links ul{
+    list-style: none;
+}
+
+.co-links li a{
+    color: #adacac;
+    font-size: 16px;
+    text-decoration: none;
+}
